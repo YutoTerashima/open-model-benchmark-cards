@@ -22,3 +22,9 @@ motivation and extension roadmap.
 ## Portfolio Notes
 
 This project makes benchmark results easier to audit, compare, and reproduce.
+
+## Experiment Artifacts
+
+- Result schema: [`examples/result_schema.json`](examples/result_schema.json)
+- Model comparison: [`reports/model_comparison.csv`](reports/model_comparison.csv)
+- Analysis: [`reports/model_comparison_analysis.md`](reports/model_comparison_analysis.md)
