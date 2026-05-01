@@ -43,3 +43,8 @@ tables from a list of result objects.
 The repository includes 18 model-result records in
 [`examples/full_model_results.json`](examples/full_model_results.json) and a
 generated report in [`reports/full_model_comparison_report.md`](reports/full_model_comparison_report.md).
+
+## Schema Checks
+
+The card generator includes explicit schema checks for benchmark result objects,
+keeping generated reports consistent across model comparisons.
