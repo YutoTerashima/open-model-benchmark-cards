@@ -1,0 +1,33 @@
+{
+  "kind": "cards",
+  "title": "Open Model Benchmark Cards V2",
+  "report": "open_model_benchmark_cards_v2_research_report.md",
+  "dataset_path": "reports/results/portfolio_benchmark_cards.json",
+  "max_rows_full": 1000,
+  "max_rows_smoke": 100,
+  "experiments": [
+    {
+      "id": "schema_validation",
+      "method": "schema"
+    },
+    {
+      "id": "reproducibility_score",
+      "method": "reproducibility"
+    },
+    {
+      "id": "limitation_quality",
+      "method": "limitations"
+    },
+    {
+      "id": "portfolio_index",
+      "method": "portfolio"
+    }
+  ],
+  "ablations": [
+    "required_fields",
+    "artifact_links",
+    "risk_sections",
+    "metric_coverage"
+  ],
+  "discussion": "Benchmark cards are useful when they are auditable. V2 consumes the other repositories' experiment indexes and scores every card for reproducibility and limitation coverage."
+}

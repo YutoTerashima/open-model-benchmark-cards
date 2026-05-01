@@ -1,0 +1,75 @@
+{
+  "title": "Open Model Benchmark Cards V2",
+  "kind": "cards",
+  "dataset_path": "reports/results/portfolio_benchmark_cards.json",
+  "profile": "full",
+  "generated_at": "2026-05-02 08:13:51",
+  "git_commit": "e8ed633",
+  "device": {
+    "requested_device": "cuda",
+    "actual_device": "cuda",
+    "cuda_available": true,
+    "gpu_name": "NVIDIA GeForce RTX 5090 Laptop GPU",
+    "torch_version": "2.10.0+cu128",
+    "cuda_runtime": "12.8"
+  },
+  "results": [
+    {
+      "repo": "agent-safety-eval-lab",
+      "completeness_score": 1.0,
+      "experiments": 4,
+      "artifact_count": 6
+    },
+    {
+      "repo": "agent-trace-viewer",
+      "completeness_score": 1.0,
+      "experiments": 4,
+      "artifact_count": 6
+    },
+    {
+      "repo": "llm-eval-cookbook",
+      "completeness_score": 1.0,
+      "experiments": 5,
+      "artifact_count": 6
+    },
+    {
+      "repo": "mcp-tool-security-playground",
+      "completeness_score": 1.0,
+      "experiments": 4,
+      "artifact_count": 6
+    },
+    {
+      "repo": "multilingual-llm-safety-bench",
+      "completeness_score": 1.0,
+      "experiments": 4,
+      "artifact_count": 7
+    },
+    {
+      "repo": "prompt-robustness-suite",
+      "completeness_score": 1.0,
+      "experiments": 15,
+      "artifact_count": 5
+    },
+    {
+      "repo": "rag-eval-observatory",
+      "completeness_score": 1.0,
+      "experiments": 4,
+      "artifact_count": 5
+    },
+    {
+      "repo": "transformer-from-scratch-notes",
+      "completeness_score": 1.0,
+      "experiments": 4,
+      "artifact_count": 5
+    }
+  ],
+  "artifacts": [
+    "reports\\results\\v2_benchmark_cards.json",
+    "reports\\results\\v2_card_quality_scores.csv",
+    "reports\\figures\\v2_card_artifact_counts.png",
+    "reports\\figures\\v2_card_completeness.png",
+    "reports\\figures\\v2_card_experiment_counts.png"
+  ],
+  "discussion": "Benchmark cards are useful when they are auditable. V2 consumes the other repositories' experiment indexes and scores every card for reproducibility and limitation coverage.",
+  "total_runtime_seconds": 0.307
+}
