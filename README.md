@@ -48,3 +48,8 @@ generated report in [`reports/full_model_comparison_report.md`](reports/full_mod
 
 The card generator includes explicit schema checks for benchmark result objects,
 keeping generated reports consistent across model comparisons.
+## Real Public Dataset Experiment
+
+`datasets/external/real_benchmark_card_inputs.json` contains benchmark-card inputs derived from
+[aizip/Rag-Eval-Dataset-6k](https://huggingface.co/datasets/aizip/Rag-Eval-Dataset-6k). The card
+captures source URL, metric names, and limitations instead of inventing model scores.
