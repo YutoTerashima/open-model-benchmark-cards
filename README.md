@@ -28,3 +28,12 @@ This project makes benchmark results easier to audit, compare, and reproduce.
 - Result schema: [`examples/result_schema.json`](examples/result_schema.json)
 - Model comparison: [`reports/model_comparison.csv`](reports/model_comparison.csv)
 - Analysis: [`reports/model_comparison_analysis.md`](reports/model_comparison_analysis.md)
+
+## CLI
+
+```bash
+python -m open_model_benchmark_cards.cli examples/result_schema.json
+```
+
+The CLI validates single-model cards and can also render multi-model comparison
+tables from a list of result objects.
