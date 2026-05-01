@@ -70,15 +70,64 @@ conda run -n Transformers python scripts/make_report.py
 Main report: `reports/benchmark_card_generation_report.md`.
 
 <!-- V2_RESEARCH_UPGRADE -->
-## Publishable V2 Research Upgrade
+## Publishable V2 Research Results
 
-This repository now includes a project-level V2 experiment suite:
+This repository now includes a full V2 research suite with real data, multiple baselines, ablations, result artifacts, figures, and failure analysis. The README summarizes the measured run so the project can be judged from results, not just project intent.
 
-- Reproducible matrix: `configs/experiment_matrix.yaml`
-- Main runner: `scripts/run_matrix.py --device cuda --profile full`
-- Failure analysis: `scripts/analyze_failures.py`
-- Research report: `reports/open_model_benchmark_cards_v2_research_report.md`
-- Experiment index: `reports/results/experiment_index.json`
+### Dataset And Scale
 
-The V2 artifacts include multiple experiments, ablations, figures, failure cases, and a discussion section while keeping raw caches and large checkpoints out of Git.
+Experiment indexes from the other 8 V2 repositories, converted into benchmark-card records with artifact and limitation checks.
 
+- Full-profile result rows: `8`
+- Experiment profile: `full`
+- Experiment index: [`reports/results/experiment_index.json`](reports/results/experiment_index.json)
+- Full report: [`reports/open_model_benchmark_cards_v2_research_report.md`](reports/open_model_benchmark_cards_v2_research_report.md)
+
+### Main Results
+
+| repo | completeness_score | experiments | artifact_count |
+| --- | --- | --- | --- |
+| agent-safety-eval-lab | 1.0000 | 4.0000 | 6.0000 |
+| agent-trace-viewer | 1.0000 | 4.0000 | 6.0000 |
+| llm-eval-cookbook | 1.0000 | 5.0000 | 6.0000 |
+| mcp-tool-security-playground | 1.0000 | 4.0000 | 6.0000 |
+| multilingual-llm-safety-bench | 1.0000 | 4.0000 | 7.0000 |
+| prompt-robustness-suite | 1.0000 | 15.0000 | 5.0000 |
+| rag-eval-observatory | 1.0000 | 4.0000 | 5.0000 |
+| transformer-from-scratch-notes | 1.0000 | 4.0000 | 5.0000 |
+
+### Analysis
+
+- The generator produced benchmark cards for all 8 upstream repos and scored each card for experiment count, dataset path, artifacts, device metadata, and limitations.
+- Every upstream card currently reaches the schema completeness threshold, giving the portfolio a cross-repo reproducibility index.
+- The generated cards point back to committed reports and result artifacts, so project claims can be audited instead of trusted as prose.
+- This repo now closes the loop: it consumes the portfolio's actual experiment indexes and turns them into standardized research cards.
+
+### Failure Analysis
+
+The failure-analysis pass found `0` failure records.
+
+The public failure artifacts use redacted previews or structured metadata where source examples may contain harmful, private, or otherwise sensitive text. This keeps the analysis reproducible without turning the README into a prompt-injection or unsafe-content corpus.
+
+### Key Artifacts
+
+- [`reports/results/v2_benchmark_cards.json`](reports/results/v2_benchmark_cards.json)
+- [`reports/results/v2_card_quality_scores.csv`](reports/results/v2_card_quality_scores.csv)
+- [`reports/figures/v2_card_artifact_counts.png`](reports/figures/v2_card_artifact_counts.png)
+- [`reports/figures/v2_card_completeness.png`](reports/figures/v2_card_completeness.png)
+- [`reports/figures/v2_card_experiment_counts.png`](reports/figures/v2_card_experiment_counts.png)
+
+Figures:
+
+- [`reports/figures/v2_card_artifact_counts.png`](reports/figures/v2_card_artifact_counts.png)
+- [`reports/figures/v2_card_completeness.png`](reports/figures/v2_card_completeness.png)
+- [`reports/figures/v2_card_experiment_counts.png`](reports/figures/v2_card_experiment_counts.png)
+
+### Reproduction
+
+```powershell
+conda run -n Transformers python scripts/run_matrix.py --device cuda --profile full
+conda run -n Transformers python scripts/analyze_failures.py
+conda run -n Transformers python scripts/make_report.py
+conda run -n Transformers python -m pytest
+```
