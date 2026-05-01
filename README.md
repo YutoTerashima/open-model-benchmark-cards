@@ -37,3 +37,9 @@ python -m open_model_benchmark_cards.cli examples/result_schema.json
 
 The CLI validates single-model cards and can also render multi-model comparison
 tables from a list of result objects.
+
+## Full Model Set
+
+The repository includes 18 model-result records in
+[`examples/full_model_results.json`](examples/full_model_results.json) and a
+generated report in [`reports/full_model_comparison_report.md`](reports/full_model_comparison_report.md).

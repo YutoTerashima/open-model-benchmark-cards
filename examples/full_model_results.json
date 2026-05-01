@@ -1,0 +1,128 @@
+[
+  {
+    "model": "open-model-a",
+    "accuracy": 0.62,
+    "refusal_precision": 0.7,
+    "latency_ms": 80,
+    "cost_class": "api"
+  },
+  {
+    "model": "open-model-b",
+    "accuracy": 0.655,
+    "refusal_precision": 0.74,
+    "latency_ms": 87,
+    "cost_class": "local"
+  },
+  {
+    "model": "open-model-c",
+    "accuracy": 0.69,
+    "refusal_precision": 0.78,
+    "latency_ms": 94,
+    "cost_class": "local"
+  },
+  {
+    "model": "open-model-d",
+    "accuracy": 0.725,
+    "refusal_precision": 0.82,
+    "latency_ms": 101,
+    "cost_class": "api"
+  },
+  {
+    "model": "open-model-e",
+    "accuracy": 0.76,
+    "refusal_precision": 0.86,
+    "latency_ms": 108,
+    "cost_class": "local"
+  },
+  {
+    "model": "open-model-f",
+    "accuracy": 0.795,
+    "refusal_precision": 0.7,
+    "latency_ms": 115,
+    "cost_class": "local"
+  },
+  {
+    "model": "open-model-g",
+    "accuracy": 0.83,
+    "refusal_precision": 0.74,
+    "latency_ms": 122,
+    "cost_class": "api"
+  },
+  {
+    "model": "open-model-h",
+    "accuracy": 0.62,
+    "refusal_precision": 0.78,
+    "latency_ms": 129,
+    "cost_class": "local"
+  },
+  {
+    "model": "open-model-i",
+    "accuracy": 0.655,
+    "refusal_precision": 0.82,
+    "latency_ms": 136,
+    "cost_class": "local"
+  },
+  {
+    "model": "open-model-j",
+    "accuracy": 0.69,
+    "refusal_precision": 0.86,
+    "latency_ms": 143,
+    "cost_class": "api"
+  },
+  {
+    "model": "open-model-k",
+    "accuracy": 0.725,
+    "refusal_precision": 0.7,
+    "latency_ms": 150,
+    "cost_class": "local"
+  },
+  {
+    "model": "open-model-l",
+    "accuracy": 0.76,
+    "refusal_precision": 0.74,
+    "latency_ms": 157,
+    "cost_class": "local"
+  },
+  {
+    "model": "open-model-m",
+    "accuracy": 0.795,
+    "refusal_precision": 0.78,
+    "latency_ms": 164,
+    "cost_class": "api"
+  },
+  {
+    "model": "open-model-n",
+    "accuracy": 0.83,
+    "refusal_precision": 0.82,
+    "latency_ms": 171,
+    "cost_class": "local"
+  },
+  {
+    "model": "open-model-o",
+    "accuracy": 0.62,
+    "refusal_precision": 0.86,
+    "latency_ms": 178,
+    "cost_class": "local"
+  },
+  {
+    "model": "open-model-p",
+    "accuracy": 0.655,
+    "refusal_precision": 0.7,
+    "latency_ms": 185,
+    "cost_class": "api"
+  },
+  {
+    "model": "open-model-q",
+    "accuracy": 0.69,
+    "refusal_precision": 0.74,
+    "latency_ms": 192,
+    "cost_class": "local"
+  },
+  {
+    "model": "open-model-r",
+    "accuracy": 0.725,
+    "refusal_precision": 0.78,
+    "latency_ms": 199,
+    "cost_class": "local"
+  }
+]
