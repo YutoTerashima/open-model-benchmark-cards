@@ -1,0 +1,9 @@
+{
+  "kind": "cards",
+  "dataset": "local-portfolio-results",
+  "config": "default",
+  "split": "reports",
+  "report": "benchmark_card_generation_report.md",
+  "title": "Benchmark Card Generation Report",
+  "description": "Benchmark cards generated from local GPU experiment metadata."
+}

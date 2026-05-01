@@ -1,0 +1,198 @@
+[
+  {
+    "repo": "agent-safety-eval-lab",
+    "metric_file": "reports\\results\\gpu_classification_metrics.json",
+    "dataset": "PKU-Alignment/BeaverTails",
+    "device": {
+      "requested_device": "cuda",
+      "actual_device": "cuda",
+      "cuda_available": true,
+      "gpu_name": "NVIDIA GeForce RTX 5090 Laptop GPU",
+      "torch_version": "2.10.0+cu128",
+      "cuda_runtime": "12.8"
+    },
+    "keys": [
+      "dataset",
+      "device",
+      "failure_examples",
+      "gpu_mlp_accuracy",
+      "gpu_mlp_macro_f1",
+      "gpu_pred_labels",
+      "gpu_training_seconds",
+      "history",
+      "kind",
+      "labels",
+      "lr_pred_labels",
+      "test_rows"
+    ]
+  },
+  {
+    "repo": "agent-trace-viewer",
+    "metric_file": "reports\\results\\trace_summary.json",
+    "dataset": null,
+    "device": {
+      "requested_device": "cuda",
+      "actual_device": "cuda",
+      "cuda_available": true,
+      "gpu_name": "NVIDIA GeForce RTX 5090 Laptop GPU",
+      "torch_version": "2.10.0+cu128",
+      "cuda_runtime": "12.8"
+    },
+    "keys": [
+      "device",
+      "policy_counts",
+      "traces"
+    ]
+  },
+  {
+    "repo": "llm-eval-cookbook",
+    "metric_file": "reports\\results\\eval_method_summary.json",
+    "dataset": "aizip/Rag-Eval-Dataset-6k",
+    "device": {
+      "requested_device": "cuda",
+      "actual_device": "cuda",
+      "cuda_available": true,
+      "gpu_name": "NVIDIA GeForce RTX 5090 Laptop GPU",
+      "torch_version": "2.10.0+cu128",
+      "cuda_runtime": "12.8"
+    },
+    "keys": [
+      "correlation",
+      "dataset",
+      "device",
+      "mean_exact",
+      "mean_lexical_overlap",
+      "rows"
+    ]
+  },
+  {
+    "repo": "mcp-tool-security-playground",
+    "metric_file": "reports\\results\\gpu_classification_metrics.json",
+    "dataset": "S-Labs/prompt-injection-dataset",
+    "device": {
+      "requested_device": "cuda",
+      "actual_device": "cuda",
+      "cuda_available": true,
+      "gpu_name": "NVIDIA GeForce RTX 5090 Laptop GPU",
+      "torch_version": "2.10.0+cu128",
+      "cuda_runtime": "12.8"
+    },
+    "keys": [
+      "dataset",
+      "device",
+      "failure_examples",
+      "gpu_mlp_accuracy",
+      "gpu_mlp_macro_f1",
+      "gpu_pred_labels",
+      "gpu_training_seconds",
+      "history",
+      "kind",
+      "labels",
+      "lr_pred_labels",
+      "test_rows"
+    ]
+  },
+  {
+    "repo": "multilingual-llm-safety-bench",
+    "metric_file": "reports\\results\\gpu_classification_metrics.json",
+    "dataset": "lumees/multilingual-safety-classification-dataset",
+    "device": {
+      "requested_device": "cuda",
+      "actual_device": "cuda",
+      "cuda_available": true,
+      "gpu_name": "NVIDIA GeForce RTX 5090 Laptop GPU",
+      "torch_version": "2.10.0+cu128",
+      "cuda_runtime": "12.8"
+    },
+    "keys": [
+      "dataset",
+      "device",
+      "failure_examples",
+      "gpu_mlp_accuracy",
+      "gpu_mlp_macro_f1",
+      "gpu_pred_labels",
+      "gpu_training_seconds",
+      "history",
+      "kind",
+      "labels",
+      "lr_pred_labels",
+      "test_rows"
+    ]
+  },
+  {
+    "repo": "prompt-robustness-suite",
+    "metric_file": "reports\\results\\prompt_robustness_metrics.json",
+    "dataset": null,
+    "device": {
+      "requested_device": "cuda",
+      "actual_device": "cuda",
+      "cuda_available": true,
+      "gpu_name": "NVIDIA GeForce RTX 5090 Laptop GPU",
+      "torch_version": "2.10.0+cu128",
+      "cuda_runtime": "12.8"
+    },
+    "keys": [
+      "classifier_macro_f1",
+      "device",
+      "variants"
+    ]
+  },
+  {
+    "repo": "rag-eval-observatory",
+    "metric_file": "reports\\results\\retrieval_failures.json",
+    "dataset": null,
+    "device": {
+      "requested_device": "cuda",
+      "actual_device": "cuda",
+      "cuda_available": true,
+      "gpu_name": "NVIDIA GeForce RTX 5090 Laptop GPU",
+      "torch_version": "2.10.0+cu128",
+      "cuda_runtime": "12.8"
+    },
+    "keys": [
+      "record_count",
+      "records"
+    ]
+  },
+  {
+    "repo": "rag-eval-observatory",
+    "metric_file": "reports\\results\\retrieval_metrics.json",
+    "dataset": "aizip/Rag-Eval-Dataset-6k",
+    "device": {
+      "requested_device": "cuda",
+      "actual_device": "cuda",
+      "cuda_available": true,
+      "gpu_name": "NVIDIA GeForce RTX 5090 Laptop GPU",
+      "torch_version": "2.10.0+cu128",
+      "cuda_runtime": "12.8"
+    },
+    "keys": [
+      "dataset",
+      "device",
+      "retrievers",
+      "rows"
+    ]
+  },
+  {
+    "repo": "transformer-from-scratch-notes",
+    "metric_file": "reports\\results\\tiny_transformer_metrics.json",
+    "dataset": "stanfordnlp/imdb",
+    "device": {
+      "requested_device": "cuda",
+      "actual_device": "cuda",
+      "cuda_available": true,
+      "gpu_name": "NVIDIA GeForce RTX 5090 Laptop GPU",
+      "torch_version": "2.10.0+cu128",
+      "cuda_runtime": "12.8"
+    },
+    "keys": [
+      "dataset",
+      "device",
+      "history",
+      "parameters",
+      "rows",
+      "seconds",
+      "vocab_size"
+    ]
+  }
+]

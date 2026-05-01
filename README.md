@@ -53,3 +53,18 @@ keeping generated reports consistent across model comparisons.
 `datasets/external/real_benchmark_card_inputs.json` contains benchmark-card inputs derived from
 [aizip/Rag-Eval-Dataset-6k](https://huggingface.co/datasets/aizip/Rag-Eval-Dataset-6k). The card
 captures source URL, metric names, and limitations instead of inventing model scores.
+
+## GPU-Backed Real Experiment
+
+This repository now includes a reproducible GPU-backed experiment using `local-portfolio-results`.
+The smoke path runs on the local RTX 5090 Laptop GPU through the `Transformers` conda
+environment and writes metrics, figures, and a markdown report.
+
+```powershell
+conda run -n Transformers python scripts/download_data.py --smoke
+conda run -n Transformers python scripts/preprocess_data.py --max-samples 384
+conda run -n Transformers python scripts/run_experiment.py --device cuda --smoke
+conda run -n Transformers python scripts/make_report.py
+```
+
+Main report: `reports/benchmark_card_generation_report.md`.
