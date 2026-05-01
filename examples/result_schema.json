@@ -1,0 +1,11 @@
+{
+  "model": "model name",
+  "task": "benchmark description",
+  "metrics": {
+    "metric_name": "value"
+  },
+  "repro_command": "command to reproduce",
+  "limitations": [
+    "known limitation"
+  ]
+}
