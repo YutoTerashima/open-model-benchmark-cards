@@ -61,6 +61,12 @@
       "completeness_score": 1.0,
       "experiments": 4,
       "artifact_count": 5
+    },
+    {
+      "experiment_id": "top_tier_review_gate",
+      "artifact_count": 6,
+      "coverage_score": 1.0,
+      "review_value": "evidence-backed claims, artifact provenance, reproducibility manifest, and strict audit gate"
     }
   ],
   "artifacts": [
@@ -68,7 +74,13 @@
     "reports\\results\\v2_card_quality_scores.csv",
     "reports\\figures\\v2_card_artifact_counts.png",
     "reports\\figures\\v2_card_completeness.png",
-    "reports\\figures\\v2_card_experiment_counts.png"
+    "reports\\figures\\v2_card_experiment_counts.png",
+    "docs/top_tier_reviewer_packet.md",
+    "reports/results/claim_evidence_matrix.csv",
+    "reports/results/artifact_manifest.json",
+    "reports/results/reproducibility_manifest.json",
+    "reports/results/top_tier_quality_gate.json",
+    "reports/figures/top_tier_review_scores.png"
   ],
   "discussion": "Benchmark cards are useful when they are auditable. V2 consumes the other repositories' experiment indexes and scores every card for reproducibility and limitation coverage.",
   "total_runtime_seconds": 0.307
